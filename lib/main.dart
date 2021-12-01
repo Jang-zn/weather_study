@@ -6,10 +6,7 @@ import 'package:weather_study/styles.dart';
 
 void main() {
   AppSettings settings = AppSettings();
-  // Don't allow landscape mode
-  SystemChrome.setPreferredOrientations(
-      [DeviceOrientation.portraitUp, DeviceOrientation.portraitDown])
-      .then((_) => runApp(MyApp(settings: settings)));
+  runApp(MyApp(settings: settings,));
 }
 
 class MyApp extends StatelessWidget {

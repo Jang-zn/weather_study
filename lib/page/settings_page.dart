@@ -45,25 +45,25 @@ class SettingsPageState extends State<SettingsPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(
+        title: const Text(
           'Settings Page',
           style: TextStyle(color: AppColor.textColorLight),
         ),
         leading: IconButton(
           onPressed: () => Navigator.of(context).pop(),
-          icon: Icon(Icons.close),
+          icon: const Icon(Icons.close),
         ),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(
           children: <Widget>[
-            Text('Temperature Unit'),
+            const Text('Temperature Unit'),
             SegmentedControl(
               temperatureOptions,
               onSelectionChanged: (int selection) => _handleTemperatureUnitChange(selection),
             ),
-            Divider(),
+            const Divider(),
             ListTile(
               leading: Icon(Icons.add),
               title: Text("Add new city"),

@@ -214,7 +214,7 @@ class _ForecastPageState extends State<ForecastPage> with TickerProviderStateMix
         children: <Widget>[
           ColorTransitionText(
             text: _weatherDescription,
-            style: Theme.of(context).textTheme.headline1,
+            style: Theme.of(context).textTheme.headline4,
             animation: _textColorTween.animate(_animationController),
           ),
           ColorTransitionText(
@@ -240,7 +240,7 @@ class _ForecastPageState extends State<ForecastPage> with TickerProviderStateMix
           animation: _backgroundColorTween.animate(_animationController),
           title: ColorTransitionText(
             text: _forecastController.selectedHourlyTemperature.city.name,
-            style: Theme.of(context).textTheme.headline1,
+            style: Theme.of(context).textTheme.headline6,
             animation: _textColorTween.animate(_animationController),
           ),
           actionIcon: widget.settingsButton,

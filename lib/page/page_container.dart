@@ -36,7 +36,7 @@ class _PageContainerState extends State<PageContainer> {
     return ForecastPage(
       menu: PopupMenuButton(
         elevation: 0.0,
-        icon: Icon(
+        icon: const Icon(
           Icons.location_city,
           color: AppColor.textColorDark,
         ),
@@ -58,7 +58,7 @@ class _PageContainerState extends State<PageContainer> {
       settingsButton: FlatButton(
           child: Text(
             AnimationUtil.temperatureLabels[settings.selectedTemperature],
-            style: Theme.of(context).textTheme.headline1,
+            style: Theme.of(context).textTheme.headline5,
           ),
           onPressed: _showSettingsPage),
       settings: settings,
